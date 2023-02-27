@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Nuova pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nuova pizza</h1>
+        <hr />
+        <form id="pizza-form" method="post" onsubmit="createPizza(event)">
+            <ul id="validation_errors">
+
+            </ul>
+            <div class="row">
+                <div class="col-8">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name">
+                    <div class="text-danger">
+                        <ul id="title_err">
+
+                        </ul>
+                    </div>
+
+                    <label for="description" class="form-label">Descrizione</label>
+                    <input type="text" class="form-control" id="description">
+                    <div class="text-danger">
+                        <ul id="author_err">
+
+                        </ul>
+                    </div>
+
+                    <label for="imgPath" class="form-label">Immagine</label>
+                    <input type="text" class="form-control" id="imgPath">
+                    <div class="text-danger">
+                        <ul id="author_err">
+                    
+                        </ul>
+                    </div>
+
+
+                    <label for="price" class="form-label">Prezzo</label>
+                    <input type="text" class="form-control" id="price">
+                    <div class="text-danger">
+                        <ul id="isbn_err">
+
+                        </ul>
+                    </div>
+
+
+                    <a class="btn btn-primary" href="index.html">Salva</a>
+                    <!-- <button type="submit" class="btn btn-primary">Salva</button> -->
+                    <a class="btn btn-primary" href="index.html">Annulla</a>
+                    <a class="btn btn-primary" href="index.html">Indietro</a>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!--ADD SCRIPT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="create.js"></script>
+
+</body>
+
+</html>
